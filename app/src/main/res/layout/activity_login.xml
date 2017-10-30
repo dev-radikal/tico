@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+   android:background="@drawable/background"
+    tools:context="com.transindia.tico.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/big_logo"></ImageView>
+
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_below="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="50dp">
+            <EditText
+                android:id="@+id/user_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignParentStart="true"
+                android:background="@null"
+                android:hint="User name"
+                android:textSize="16dp"
+                android:textColorHint="#8099b998"
+                android:textColor="@android:color/white"></EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/white"
+                ></LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_below="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/password_edit"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignParentStart="true"
+                android:background="@null"
+                android:hint="Password"
+                android:textSize="16dp"
+                android:textColorHint="#8099b998"
+                android:textColor="@android:color/white"></EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/white"
+                ></LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="75dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:alpha="9"
+            android:background="@drawable/trans_button_background"
+            android:gravity="center"
+            android:text="Log In"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/colororange"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:id="@+id/forgot_pwd_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot password"
+            android:textColor="@color/colorwhite"
+            android:gravity="center"
+            android:layout_marginBottom="45dp"
+            android:layout_alignParentBottom="true"
+
+            ></TextView>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

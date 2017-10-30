@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.transindia.tico.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="105dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignParentStart="true"
+                android:background="@null"
+                android:hint="User name"
+                android:textSize="16dp"
+
+                android:textColorHint="#99b998"
+                android:textColor="@android:color/white"></EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+
+                android:background="@android:color/white"
+                ></LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_below="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+             >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_alignParentStart="true"
+                android:background="@null"
+                android:hint="Password"
+                android:textSize="16dp"
+                android:textColorHint="#99b998"
+                android:textColor="@android:color/white"></EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/white"
+                ></LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="105dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:alpha="9"
+            android:background="@drawable/trans_button_background"
+            android:gravity="center"
+            android:text="Log In"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/colororange"
+            android:textSize="20dp"
+
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

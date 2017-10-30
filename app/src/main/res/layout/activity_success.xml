@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.transindia.tico.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="42dp">
+        <ImageView
+            android:id="@+id/top_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tick_iconn"></ImageView>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_below="@+id/top_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/colororange"
+            android:text="PAYMENT SUCCESSFULL!!"></TextView>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_below="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/colororange"
+            android:text="Thank You"></TextView>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/big_logo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="32dp"
+            ></ImageView>
+
+    </RelativeLayout>
+
+</LinearLayout>
